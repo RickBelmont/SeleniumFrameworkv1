@@ -7,11 +7,12 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin={"pretty"}
+		plugin={"pretty", "html: target/cucumber-reports"}
 		,features={"src/test/resources"}
-		,glue={"com.liverpool.stepdefinitions"}
-		,tags={"@liverpool"}
+		,glue={"com.udenycourse.steps.steps"}
+		,tags={"@List"}
 		,monochrome = false)
+
 public class RunCucumberTest {
 
 }
